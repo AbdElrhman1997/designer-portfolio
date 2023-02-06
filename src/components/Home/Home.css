@@ -1,0 +1,12 @@
+.home {
+    background: url('../../assets/Images/bgHome.jpeg') center;
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    /* background-position: 50%; */
+    height: 100vh;
+}
+.imgHome {
+    height: 400px;
+}
