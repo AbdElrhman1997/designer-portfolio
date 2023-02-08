@@ -10,3 +10,12 @@
 .imgHome {
     height: 400px;
 }
+@media (max-width:768px) {
+    .home {
+        background: url('../../assets/Images/bgHomeMobile.jpg') center;
+        background-size: 100% 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        height: fit-content;
+    }
+}

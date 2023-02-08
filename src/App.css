@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     overflow-x: hidden;
-    height: 5000px;
     background-color: #fdfdfd;
+    position: relative;
 }

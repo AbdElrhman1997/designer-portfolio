@@ -8,7 +8,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about text-center m-auto text-black" id="about">
+    <section className="about text-center m-auto text-black" id="About">
       <p className="text-center mt-8 text-slate-400" data-aos="fade-left">
         My Reacent Work
       </p>
@@ -60,7 +60,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
