@@ -10,10 +10,15 @@ const card = ({ head, img, body }) => {
   return (
     <div class="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
       <a href="/ProjectDetails">
-        <img class="rounded-t-lg h-48 portfolioImg" src={img} alt="dsfcdskl" />
+        <img
+          onClick={handleClick}
+          class="rounded-t-lg h-48 portfolioImg"
+          src={img}
+          alt="dsfcdskl"
+        />
       </a>
       <div class="p-5">
-        <a href="1ProjectDetails">
+        <a onClick={handleClick} href="/ProjectDetails">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {head}
           </h5>
