@@ -55,7 +55,7 @@ function About() {
           </p>
           <div className="col-span-12">
             <button class="bg-transparent hover:bg-red-700 text-red-700 font-bold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent rounded">
-              <a href="#contact">Let`s Talk</a>
+              <a href="#Contact">Let`s Talk</a>
             </button>
           </div>
         </div>

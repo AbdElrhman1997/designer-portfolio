@@ -2,7 +2,7 @@ import React from "react";
 import "./Contsct.css";
 const Contact = () => {
   return (
-    <section class="w-full Contact">
+    <section class="w-full Contact" id="Contact">
       <div class="w-full flex items-center justify-center my-12">
         <div class="bg-white dark:bg-gray-800 shadow rounded py-16 lg:px-28 px-8">
           <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">
