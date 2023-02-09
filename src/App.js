@@ -1,23 +1,19 @@
 import React from "react";
 import "./App.css";
-import About from "./components/About/About";
 import Home from "./components/Home/Home";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainNavigation from "./components/layout/MainNavigation/MainNavigation";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import Services from "./components/Services/Services";
 
 function App() {
   return (
     <main>
-      <MainNavigation />
-      <Home />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ProjectDetails" element={<ProjectDetails />} />
+        </Routes>
+      </BrowserRouter>
     </main>
   );
 }

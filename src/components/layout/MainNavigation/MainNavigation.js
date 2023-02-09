@@ -28,7 +28,6 @@ function MainNavigation() {
     }
   };
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 66) {
       navBar.current.classList.add("bg-red-700");
       document.querySelector(".navLg").classList.add("text-white");

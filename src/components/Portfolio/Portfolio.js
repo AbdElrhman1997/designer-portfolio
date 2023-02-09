@@ -11,7 +11,7 @@ import "./Portfolio.css";
 
 function Portfolio() {
   return (
-    <section className="portfolio my-12" id="Portfolio">
+    <section className="portfolio mb-24" id="Portfolio">
       <p className="text-center text-slate-400" data-aos="fade-left">
         My Reacent Work
       </p>
@@ -19,12 +19,12 @@ function Portfolio() {
         Portfolio
       </p>
       <div className="flex flex-wrap justify-evenly gap-4">
-        <Card head="anything" body="" img={img1} />
-        <Card head="anything" body="" img={img2} />
-        <Card head="anything" body="" img={img3} />
-        <Card head="anything" body="" img={img4} />
-        <Card head="anything" body="" img={img5} />
-        <Card head="anything" body="" img={img6} />
+        <Card head="anything 11111111" body="" img={img1} />
+        <Card head="anything 22222222" body="" img={img2} />
+        <Card head="anything 33333333" body="" img={img3} />
+        <Card head="anything 444" body="" img={img4} />
+        <Card head="anything 555" body="" img={img5} />
+        <Card head="anything 666" body="" img={img6} />
       </div>
     </section>
   );

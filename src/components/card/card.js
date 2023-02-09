@@ -1,23 +1,28 @@
 import React from "react";
 import "./card.css";
-const card = ({ head, img, describe }) => {
+const card = ({ head, img, body }) => {
+  const handleClick = () => {
+    localStorage.clear();
+    localStorage.setItem("head", head);
+    localStorage.setItem("body", body);
+    localStorage.setItem("img", img);
+  };
   return (
     <div class="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
-      <a href="#">
+      <a href="/ProjectDetails">
         <img class="rounded-t-lg h-48 portfolioImg" src={img} alt="dsfcdskl" />
       </a>
       <div class="p-5">
-        <a href="#">
+        <a href="1ProjectDetails">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {head}
           </h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {describe}
-        </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{body}</p>
         <a
-          href="#"
+          href="/ProjectDetails"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+          onClick={handleClick}
         >
           Read more
           <svg
