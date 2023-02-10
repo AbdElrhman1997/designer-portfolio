@@ -19,12 +19,50 @@ function Portfolio() {
         Portfolio
       </p>
       <div className="flex flex-wrap justify-evenly gap-4">
-        <Card head="anything 11111111" body="" img={img1} />
-        <Card head="anything 22222222" body="" img={img2} />
-        <Card head="anything 33333333" body="" img={img3} />
-        <Card head="anything 444" body="" img={img4} />
-        <Card head="anything 555" body="" img={img5} />
-        <Card head="anything 666" body="" img={img6} />
+        <Card
+          head="Advertisement for REDBULL"
+          body="There is only one can left in the world and there is a struggle over it
+          The power of the struggle appears in the destruction that befell the city, and only two people remain, and the conflict between them continues
+          The intensity of the conflict illustrates the strong desire to obtain it, which reflects the fame of the product"
+          img={img1}
+          projectLink="https://www.behance.net/gallery/162828715/Advertisement-for-REDBULL"
+        />
+        <Card
+          head="LAMAR PROJECT"
+          body="Orange juice with the company's bottle inside a piece of orange and the presence of a splash of orange juice suggests the beauty of the product
+          "
+          img={img2}
+          projectLink="https://www.behance.net/gallery/149454383/LAMAR-PROJECT"
+        />
+        <Card
+          head="Nike Air Jordan"
+          body="Use scribbled background with the same colors of product expresses a sporty look"
+          img={img3}
+          projectLink="https://www.behance.net/gallery/149626069/Nike-Air-Jordan"
+        />
+        <Card
+          head="CHEVORLET CAMARO"
+          body="This iconic sports car combines aerodynamic performance with classic style and will attract attention wherever you go.
+
+          Use uniqe  background with the same colors of product expresses a sporty look 
+          The character of the tires in the background gives an elegant look"
+          img={img4}
+          projectLink="https://www.behance.net/gallery/149470265/CHEVORLET-CAMARO"
+        />
+        <Card
+          head="G- CLASS POSTER"
+          body="The G-Class is known for its durability and toughness
+          organization of colors suggests to eye  a harsh character"
+          img={img5}
+          projectLink="https://www.behance.net/gallery/153550889/G-CLASS-POSTER"
+        />
+        <Card
+          head="VOLKSWAGEN TIGUAN"
+          body="Volkswagen Tiguan has a very elegant and distinctive design
+          "
+          img={img6}
+          projectLink="https://www.behance.net/gallery/153792655/VOLKSWAGEN-TIGUAN-POSTER"
+        />
       </div>
     </section>
   );

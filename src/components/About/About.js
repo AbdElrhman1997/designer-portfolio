@@ -37,12 +37,12 @@ function About() {
             <div className=" mt-8 bg-red-700 btn btn-primary">
               <BsFillPersonFill className="m-auto text-lg my-2" />
               <p>Clients</p>
-              <p className="">20+ WorldWide</p>
+              <p className="">30+ WorldWide</p>
             </div>
             <div className=" mt-8 bg-red-700 btn btn-primary">
               <AiFillProject className="m-auto text-lg my-2" />
               <p>Projects</p>
-              <p className="">10+ Completed</p>
+              <p className="">50+ Completed</p>
             </div>
           </div>
           <p className="col-span-12 mt-5 space">

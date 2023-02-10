@@ -2,3 +2,34 @@
     width: 100%;
     height: 300px;
 }
+.project-img{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.project-img::before {
+    content: '';
+    background: linear-gradient(90.21deg, #aa3636 -5.91%, #9d1205 111.58%);
+    position: absolute;
+    height: 0;
+    opacity: 0.85;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+.project-img:hover::before {
+  height: 100%;
+}
+.project-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.project-img:hover .project-txtx {
+  top: 50%;
+  opacity: 1;
+}

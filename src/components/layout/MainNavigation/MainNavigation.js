@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../../../assets/Images/logo.png";
+import logoScroll from "../../../assets/Images/logoScroll.png";
+
 // import logo2 from "../../../assets/Images/logo.png";
 import "./MainNavigation.css";
 
@@ -47,12 +49,12 @@ function MainNavigation() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 className="block h-40 w-auto lg:hidden"
-                src={logo}
+                src={logoScroll}
                 alt="Your Company"
               />
               <img
                 className="hidden h-40 w-auto lg:block"
-                src={logo}
+                src={logoScroll}
                 alt="Your Company"
               />
             </div>
