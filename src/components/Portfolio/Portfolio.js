@@ -24,6 +24,7 @@ function Portfolio() {
           body="There is only one can left in the world and there is a struggle over it
           The power of the struggle appears in the destruction that befell the city, and only two people remain, and the conflict between them continues
           The intensity of the conflict illustrates the strong desire to obtain it, which reflects the fame of the product"
+          props="cyberpunk style,adobe photoshop"
           img={img1}
           projectLink="https://www.behance.net/gallery/162828715/Advertisement-for-REDBULL"
         />
@@ -31,21 +32,27 @@ function Portfolio() {
           head="LAMAR PROJECT"
           body="Orange juice with the company's bottle inside a piece of orange and the presence of a splash of orange juice suggests the beauty of the product
           "
+          props="Use decent ad fonts
+          ,Orange color is common in design for
+          ,adobe photoshop"
           img={img2}
           projectLink="https://www.behance.net/gallery/149454383/LAMAR-PROJECT"
         />
         <Card
           head="Nike Air Jordan"
           body="Use scribbled background with the same colors of product expresses a sporty look"
+          props="Use suitable ad fonts
+          ,adobe photoshop"
           img={img3}
           projectLink="https://www.behance.net/gallery/149626069/Nike-Air-Jordan"
         />
         <Card
           head="CHEVORLET CAMARO"
           body="This iconic sports car combines aerodynamic performance with classic style and will attract attention wherever you go.
-
           Use uniqe  background with the same colors of product expresses a sporty look 
           The character of the tires in the background gives an elegant look"
+          props="Use suitable ad fonts
+          ,adobe photoshop"
           img={img4}
           projectLink="https://www.behance.net/gallery/149470265/CHEVORLET-CAMARO"
         />
@@ -53,6 +60,8 @@ function Portfolio() {
           head="G- CLASS POSTER"
           body="The G-Class is known for its durability and toughness
           organization of colors suggests to eye  a harsh character"
+          props="Use suitable ad fonts
+          ,adobe photoshop"
           img={img5}
           projectLink="https://www.behance.net/gallery/153550889/G-CLASS-POSTER"
         />
@@ -60,6 +69,8 @@ function Portfolio() {
           head="VOLKSWAGEN TIGUAN"
           body="Volkswagen Tiguan has a very elegant and distinctive design
           "
+          props="Use suitable ad fonts
+          ,adobe photoshop"
           img={img6}
           projectLink="https://www.behance.net/gallery/153792655/VOLKSWAGEN-TIGUAN-POSTER"
         />

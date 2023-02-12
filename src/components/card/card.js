@@ -2,12 +2,13 @@ import React from "react";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import "./card.css";
 
-const card = ({ head, img, body, projectLink }) => {
+const card = ({ head, img, body, projectLink, props }) => {
   const handleClick = () => {
     localStorage.clear();
     localStorage.setItem("head", head);
     localStorage.setItem("body", body);
     localStorage.setItem("img", img);
+    localStorage.setItem("props", props);
   };
   return (
     <div class="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full overflow-hidden">
@@ -28,7 +29,7 @@ const card = ({ head, img, body, projectLink }) => {
             {head}
           </h5>
         </a>
-        <p class="mb-4 font-normal text-gray-700 dark:text-gray-400 h-40">
+        <p class="proj-body mb-4 font-normal text-gray-700 dark:text-gray-400">
           {body}
         </p>
         <a

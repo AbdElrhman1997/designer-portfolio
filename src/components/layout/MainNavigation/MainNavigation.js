@@ -7,8 +7,9 @@ import "./MainNavigation.css";
 
 function MainNavigation() {
   const [btnIsDisp, setBtnIsDisp] = useState(false);
-
+  const [isScroll, setIsScroll] = useState(false);
   const navBar = useRef();
+
   const handleClick = () => {
     setBtnIsDisp(!btnIsDisp);
   };
@@ -16,17 +17,16 @@ function MainNavigation() {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
-  // useEffect(() => {
-  //   changeBackground();
-  //   window.addEventListener("scroll", changeBackground);
-  // });
+  useEffect(() => {
+    changeLogo();
+    window.addEventListener("scroll", changeLogo);
+  });
 
   const changeLogo = () => {
     if (window.scrollY >= 66) {
-      navBar.current.classList.add("bg-red-700");
-      document.querySelector(".navLg").classList.add("text-white");
+      setIsScroll(true);
     } else {
-      navBar.current.classList.remove("bg-red-700");
+      setIsScroll(false);
     }
   };
   const changeBackground = () => {
@@ -49,12 +49,12 @@ function MainNavigation() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 className="block h-40 w-auto lg:hidden"
-                src={logoScroll}
+                src={isScroll ? logoScroll : logo}
                 alt="Your Company"
               />
               <img
                 className="hidden h-40 w-auto lg:block"
-                src={logoScroll}
+                src={isScroll ? logoScroll : logo}
                 alt="Your Company"
               />
             </div>

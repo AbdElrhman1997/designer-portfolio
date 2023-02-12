@@ -33,3 +33,9 @@
   top: 50%;
   opacity: 1;
 }
+
+.proj-body {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
