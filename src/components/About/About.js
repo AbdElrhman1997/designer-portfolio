@@ -9,7 +9,7 @@ import "./About.css";
 function About() {
   return (
     <section className="about text-center m-auto text-black" id="About">
-      <p className="text-center mt-8 text-slate-400" data-aos="fade-left">
+      <p className="text-center mt-8 text-red-600" data-aos="fade-left">
         My Recent Work
       </p>
       <p className=" text-4xl mb-12 text-black" data-aos="fade-right">

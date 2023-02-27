@@ -28,6 +28,15 @@ const Contact = () => {
 
   return (
     <section class="w-full Contact" id="Contact">
+      <p className="text-center mt-8 text-red-600" data-aos="fade-left">
+        Let’s talk
+      </p>
+      <p
+        className="text-center text-4xl mb-12 text-black"
+        data-aos="fade-right"
+      >
+        Contact Us
+      </p>
       <div class="w-full flex items-center justify-center my-12">
         <div class="bg-white dark:bg-gray-800 shadow rounded py-16 lg:px-28 px-8">
           <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">

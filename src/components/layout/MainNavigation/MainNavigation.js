@@ -12,6 +12,13 @@ function MainNavigation() {
 
   const handleClick = () => {
     setBtnIsDisp(!btnIsDisp);
+    if (btnIsDisp) {
+      document.querySelector("#mobile-menu").classList.remove("fade-in");
+      document.querySelector("#mobile-menu").classList.add("fade-out");
+    } else {
+      document.querySelector("#mobile-menu").classList.remove("fade-out");
+      document.querySelector("#mobile-menu").classList.add("fade-in");
+    }
   };
   useEffect(() => {
     changeBackground();
@@ -62,7 +69,7 @@ function MainNavigation() {
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="btnMobile inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="btnMobile inline-flex items-center justify-center rounded-md p-2 text-red-700 hover:bg-red-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={handleClick}
@@ -138,40 +145,38 @@ function MainNavigation() {
         </div>
       </div>
 
-      {btnIsDisp && (
-        <div className="navMobile sm:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pt-2 pb-3">
-            <a
-              href="#"
-              className="hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              aria-current="page"
-            >
-              Home
-            </a>
+      <div className="nav-mobile sm:hidden" id="mobile-menu">
+        <div className="px-2 pt-2 pb-3">
+          <a
+            href="#"
+            className="hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium mb-4"
+            aria-current="page"
+          >
+            Home
+          </a>
 
-            <a
-              href="#About"
-              className=" hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              About
-            </a>
+          <a
+            href="#About"
+            className=" hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium mb-4"
+          >
+            About
+          </a>
 
-            <a
-              href="#Portfolio"
-              className="hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Portfolio
-            </a>
+          <a
+            href="#Portfolio"
+            className="hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium mb-4"
+          >
+            Portfolio
+          </a>
 
-            <a
-              href="#Contact"
-              className="hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Contact
-            </a>
-          </div>
+          <a
+            href="#Contact"
+            className="hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium mb-4"
+          >
+            Contact
+          </a>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

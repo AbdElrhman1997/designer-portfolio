@@ -12,8 +12,8 @@ import "./Portfolio.css";
 function Portfolio() {
   return (
     <section className="portfolio mb-24" id="Portfolio">
-      <p className="text-center text-slate-400" data-aos="fade-left">
-        My Reacent Work
+      <p className="text-center text-red-600" data-aos="fade-left">
+        My Best projects
       </p>
       <p className="text-center text-4xl text-black mb-4" data-aos="fade-left">
         Portfolio

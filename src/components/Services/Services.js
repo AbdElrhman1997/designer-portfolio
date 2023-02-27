@@ -13,7 +13,7 @@ const Services = () => {
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
             <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-              <p className="text-center text-slate-400" data-aos="fade-left">
+              <p className="text-center text-red-600" data-aos="fade-left">
                 Our Services
               </p>
               <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
